@@ -8,9 +8,9 @@ export default Ember.Component.extend({
     },
     saveMessage1(){
       var params ={
-        topic = this.get('topic'),
-        author = this.get('author'),
-        additional = this.get('additional')
+        topic:this.get('topic'),
+        author:this.get('author'),
+        additional:this.get('additional')
       };
       this.set('addNewMessage', false);
       this.sendAction('saveMessage2', params);

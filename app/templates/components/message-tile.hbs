@@ -4,5 +4,6 @@
   {{else}}
   <button {{action 'timeShow'}}>Show the time</button>
   {{/if}}
+  {{update-message message=message update="update"}}
   <button {{action 'delete' message}}>Delete message</button>
 </li>

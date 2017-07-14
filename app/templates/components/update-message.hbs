@@ -1,0 +1,30 @@
+{{#if updateMessageForm}}
+  <h4>Update {{message.topic}}'s {{rental.author}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="owner">Topic</label>
+        {{input value=topic id="topic" placeholder=message.topic}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=message.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="additional">Additional</label>
+        {{input value=additional id="additional" placeholder=message.additional}}
+      </div>
+
+      <div class="form-group">
+        <label for="time">Time</label>
+        {{input value=time id="time" placeholder=message.time}}
+      </div>
+
+      <button {{action 'update' message}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateMessageForm'}}>Update</button>
+{{/if}}
