@@ -5,6 +5,11 @@ export default Ember.Route.extend({
     return this.store.findAll('message');
   },
   actions:{
+    saveMessage3(params){
+      var newMessage=this.store.createRecord('message', params);
+      newMessage.save();
+      this.transitionTo('index');
+    },
     destroyMessage(message){
       message.destroyRecord();
       this.transitionTo('index');
