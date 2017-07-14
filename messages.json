@@ -8,7 +8,14 @@
     {
       "topic":"Another one",
       "author":"Gracey",
-      "additional":"mimi"
+      "additional":"mimi",
       "time":"2pm"
-    }]
+    }],
+ "answers": [{
+   "name": "Andrea",
+   "content": "Did not fall down."
+ }, {
+   "name": "Alex",
+   "content": "Nice view of the volcano!"
+ }]
 }

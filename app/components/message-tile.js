@@ -8,11 +8,6 @@ export default Ember.Component.extend({
     },
     timeHide: function(){
       this.set('isTimeShowing', false);
-    },
-    delete(message){
-      if(confirm("Are you sure you want to Delete this message??")){
-        this.sendAction(destroyMessage, message);
-      }
     }
   }
 });
