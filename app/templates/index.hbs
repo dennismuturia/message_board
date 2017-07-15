@@ -3,9 +3,10 @@
   {{#each model as |message|}}
     {{message-tile message=message}}
   {{/each}}
-
-  {{new-message saveMessage2 = "saveMessage3"}}
 </ul>
+
+{{new-message saveMessage2 = "saveMessage3"}}
+<hr/>
 <h3>All of the answers</h3>
 
 <ul>
@@ -15,3 +16,4 @@
 
   {{new-answer saveAnswer="saveAnswer"}}
 </ul>
+<hr/>
