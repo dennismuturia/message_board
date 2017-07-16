@@ -22,9 +22,9 @@
         {{input value=time id="time" placeholder=message.time}}
       </div>
 
-      <button {{action 'update' message}}>Save</button>
+      <button {{action 'update' message}} class="btn btn-success">Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateMessageForm'}}>Update</button>
+  <button {{action 'updateMessageForm'}} class="btn btn-warning">Update</button>
 {{/if}}

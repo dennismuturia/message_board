@@ -10,9 +10,9 @@
         <label for="content">Content</label>
         {{input value=content id="content"}}
       </div>
-      <button {{action 'saveAnswer'}}>Save</button>
+      <button {{action 'saveAnswer'}} class="btn btn-success">Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'answerFormShow'}}>New Answer</button>
+  <button {{action 'answerFormShow'}} class="btn btn-warning">New Answer</button>
 {{/if}}
