@@ -1,8 +1,8 @@
-<li>{{message.topic}},{{message.author}},{{message.additional}}
+<li>
    {{#link-to 'message' message.id}}{{message.topic}} by {{message.author}} {{/link-to}}
   {{#if isTimeShowing}}
   <p {{action 'timeHide'}}>{{message.time}} </p>
   {{else}}
-  <button {{action 'timeShow'}}>Show the time</button>
+  <button {{action 'timeShow'}} class="btn btn-default">Show the time</button>
   {{/if}}
 </li>

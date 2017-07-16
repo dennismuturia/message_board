@@ -5,9 +5,9 @@
   <hr/>
 <ul>
   {{#each message.answers as |answer|}}
-    {{answer-tile answer=answer}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>
 
 
-<button {{action 'delete' message}}>Delete Question</button>
+<button {{action 'delete' message}} class="btn btn-danger">Delete Question</button>
