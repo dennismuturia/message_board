@@ -1,13 +1,11 @@
 <h1>{{message.topic}}</h1>
 <h3>{{message.additional}}</h3>
-
+<hr/>
 <h2> Answers </h2>
-  <hr/>
 <ul>
   {{#each message.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>
-
-
+<hr/>
 <button {{action 'delete' message}} class="btn btn-danger">Delete Question</button>

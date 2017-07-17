@@ -4,11 +4,11 @@
     <form>
       <div class="form-group">
         <label for="name">Name</label>
-        {{input value=name id="name"}}
+        {{input value=name id="name" class="form-control"}}
       </div>
       <div class="form-group">
         <label for="content">Content</label>
-        {{input value=content id="content"}}
+        {{input value=content id="content" class="form-control"}}
       </div>
       <button {{action 'saveAnswer'}} class="btn btn-success">Save</button>
     </form>
