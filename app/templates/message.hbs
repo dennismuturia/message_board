@@ -1,8 +1,9 @@
-<h2>More information about "{{model.topic}}"'s {{model.author}}</h2>
-{{message-detail message=model}}
-
-{{update-message message=model update="update"}}
-
-{{message-detail message=model destroyMessage="destroyMessage" destroyAnswer="destroyAnswer"}}
-
-{{new-answer saveAnswer="saveAnswer" message=model}}
+<div class="col-md-6">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h4>More information about "{{model.topic}}"'s {{model.author}}</h4></div>
+    <div class="panel-body">
+      {{update-message message=model update="update"}} {{message-detail message=model destroyMessage="destroyMessage" destroyAnswer="destroyAnswer"}} {{new-answer saveAnswer="saveAnswer" message=model}}
+    </div>
+  </div>
+</div>
