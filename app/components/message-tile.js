@@ -1,13 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  isTimeShowing : false,
+  isNameShowing : false,
   actions:{
-    timeShow: function(){
-      this.set('isTimeShowing', true);
+    nameShow: function(){
+      this.set('isNameShowing', true);
     },
-    timeHide: function(){
-      this.set('isTimeShowing', false);
+    nameHide: function(){
+      this.set('isNameShowing', false);
     }
   }
 });

@@ -6,3 +6,17 @@ body{
 .center{
   text-align: center;
 }
+ul{
+  list-style: none;
+  align-items:center;
+}
+.well{
+  background: red;
+}
+.mimi{
+  border-color: blue;
+  border-radius: 2px;
+}
+.head{
+  font-family: 'Sacramento', cursive;
+}

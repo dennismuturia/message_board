@@ -1,8 +1,20 @@
-<li>
-   {{#link-to 'message' message.id}}{{message.topic}} by {{message.author}} {{/link-to}}
-  {{#if isTimeShowing}}
-  <p {{action 'timeHide'}}>{{message.time}} </p>
-  {{else}}
-  <button {{action 'timeShow'}} class="btn btn-default">Show the time</button>
-  {{/if}}
+<li class=>
+  <div class="col-md-3 mimi">
+    <div class="well">
+     {{#link-to 'message' message.id}}{{message.topic}} at {{message.time}} {{/link-to}}
+    {{#if isNameShowing}}
+    <p {{action 'nameHide'}}>{{message.author}} </p>
+    {{else}}
+    <button {{action 'nameShow'}} class="btn btn-default">Show the Author</button>
+    {{/if}}
+    <ul>
+      {{#each model.answers as |answer|}}
+        <li>{{answer.content}} by {{answer.name}} </li>
+      {{/each}}
+
+    </ul>
+    <br/>
+    {{new-answer saveAnswer="saveAnswer"}}
+  </div>
+</div>
 </li>
