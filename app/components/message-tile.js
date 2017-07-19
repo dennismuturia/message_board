@@ -8,6 +8,9 @@ export default Ember.Component.extend({
     },
     nameHide: function(){
       this.set('isNameShowing', false);
+    },
+    saveAnswer(params){
+      this.sendAction('saveAnswer', params);
     }
   }
 });

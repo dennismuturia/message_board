@@ -1,7 +1,11 @@
-# questions1
+# Message Board
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an app where by a user can ask a question and get answers anonymously by other contributors.
+
+
+## author
+ Dennis Muturia
 
 ## Prerequisites
 
@@ -39,7 +43,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Make sure that you have installed firebase by running `npm install --firebase-tools`
+Then initialise by running `firebase init`.
 
 ## Further Reading / Useful Links
 

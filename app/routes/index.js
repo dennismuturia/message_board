@@ -16,5 +16,6 @@ export default Ember.Route.extend({
       newAnswer.save();
       this.transitionTo('index');
     }
+
   }
 });

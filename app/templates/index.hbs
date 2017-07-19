@@ -2,7 +2,7 @@
 <h2>Welcome to my message board</h2>
 <ul>
   {{#each model as |message|}}
-    {{message-tile message=message}}
+    {{message-tile message=message saveAnswer='saveAnswer'}}
   {{/each}}
 </ul>
 <div class="col-md-12">
